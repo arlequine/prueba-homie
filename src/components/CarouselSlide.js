@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-
+// Carousel component with image
 export default function CarouselSlide(props) {
   let images = props.photos.map((photo, index) => {
     return (

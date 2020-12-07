@@ -19,6 +19,7 @@ export default function CardInfo(props) {
   const classes = useStyles();
   const data = props.data;
   console.log('pokemon', props);
+  // Data in card
   return (
     <Card style={{ width: '15rem' }} className="col-md-6">
       <Card.Header>

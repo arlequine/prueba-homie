@@ -15,6 +15,7 @@ class App extends Component {
   }
 
   renderHomiesList () {
+    // Assemble card component
     return this.props.homies.map((homie, index) => {
       return (
         <CardInfo key={index} data={homie} ></CardInfo>
@@ -23,6 +24,7 @@ class App extends Component {
   }
 
   renderMap () {
+    // Place the points on the map
     return this.props.homies.map((homie, index) => {
       return (
         <GoogleMapReact
@@ -41,6 +43,7 @@ class App extends Component {
     })
   }
   render() {
+    // Container App
     return (
       <div className="container">
         <div className="nav-bar">
@@ -59,19 +62,7 @@ class App extends Component {
             {this.renderHomiesList()}
           </div>
           <div className="map" style={{ height: '100vh', width: '100%' }}>
-            Holi soy el mapa
-            <GoogleMapReact
-              bootstrapURLKeys={{ key: 'AIzaSyAbazOK9HPPesmMW3eEKxq0iRaGXBkD6Kg' }}
-              defaultCenter={this.center}
-              defaultZoom={this.zoom}
-              yesIWantToUseGoogleMapApiInternals
-              >
-              <AnyReactComponent
-                lat={59.955413}
-                lng={30.337844}
-                text="My Marker"
-                />
-            </GoogleMapReact>
+            pokemon
           </div>
         </div>
       </div>
