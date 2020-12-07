@@ -1,6 +1,6 @@
-# Technical test Segunda Mano
+# Technical test Homie
 
-test that consumes two api's pitches with React
+test that consume api's with React and Redux
 ## Installation
 
 Using NPM to install packages by running the command.
@@ -19,4 +19,3 @@ npm start
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
-
